@@ -23,7 +23,7 @@ class User extends Migration
             $table->string('LName', 45)->nullable();
             $table->string('Username', 45);
             $table->string('Password', 45)->nullable();
-            $table->string('Contactno', 10);->nullable();
+            $table->string('Contactno', 10)->nullable();
             $table->string('Companyregno', 45)->nullable();
             $table->string('Comapny_Name', 45)->nullable();
             $table->rememberToken();
