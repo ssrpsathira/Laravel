@@ -14,14 +14,4 @@ class Cart extends Model
     protected $table = 'Cart';
 
     protected $primaryKey = 'idCart';
-
-    /**
-     * Return the customer of a cart
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function customer()
-    {
-        return $this->belongsTo('App\Customer');
-    }
 }

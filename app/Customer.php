@@ -11,13 +11,7 @@ class Customer extends Model
      *
      * @var string
      */
-    protected $table = 'Customer';
+    protected $table = 'customer';
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne
-     */
-    public function cart()
-    {
-        return $this->hasOne('App\Cart');
-    }
+    protected $primaryKey = 'idCustomer';
 }
